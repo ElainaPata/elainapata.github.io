@@ -134,8 +134,8 @@ nav a:hover {
 .hero h2 {
   margin: 0;
   font-family: 'Playfair Display', serif;
-  font-size: clamp(80px, 13vw, 185px);
-  line-height: 0.9;
+  font-size: clamp(60px, 9vw, 130px);
+  line-height: 0.95;
   font-weight: 700;
   color: var(--cream);
 }
