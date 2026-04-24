@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
 
 :root {
-  --bg: #07130f;
-  --bg-soft: #101c16;
-  --cream: #f3ead7;
-  --muted: #a8a28f;
-  --gold: #c7b47c;
-  --border: rgba(243, 234, 215, 0.12);
+   --bg: #f5f3ef;
+  --cream: #1f2933;
+  --muted: #7b7b7b;
+  --accent: #7c8f7a;
+  --border: rgba(0, 0, 0, 0.1);
 }
 
 * {
