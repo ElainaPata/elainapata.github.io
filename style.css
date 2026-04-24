@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap');
 :root {
   --bg: #090914;
   --bg-soft: #151020;
@@ -151,10 +150,10 @@ nav a:hover {
 
 .hero h2 {
   margin: 0;
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(60px, 9vw, 130px);
+  font-family: 'Cormorant Garamond', serif;
+  letter-spacing: 1px;
   line-height: 0.95;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--cream);
 }
 
