@@ -149,21 +149,22 @@ nav a:hover {
 }
 
 .hero h2 {
-   margin: 0;
+  margin: 0;
   font-family: 'Instrument Serif', serif;
   font-size: clamp(65px, 10vw, 140px);
   line-height: 1.02;
   font-weight: 400;
   letter-spacing: -0.04em;
   color: var(--cream);
-  .hero h2 span {
+}
+
+.hero h2 span {
   display: block;
 }
 
 .hero h2 .last-name {
   margin-left: 0.55em;
   font-style: italic;
-
 }
 
 .hero-subtitle {
