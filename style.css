@@ -21,8 +21,8 @@ body {
 }
 
 .navbar {
-  height: 105px;
-  padding: 0 58px;
+ height: 85px;
+  padding: 0 48px;
   border-bottom: 1px solid var(--border);
   display: flex;
   align-items: center;
@@ -70,7 +70,7 @@ nav {
 nav a {
   color: var(--muted);
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
 }
 
@@ -83,8 +83,8 @@ nav a:hover {
   text-decoration: none;
   border: 1px solid rgba(243, 234, 215, 0.18);
   border-radius: 999px;
-  padding: 16px 28px;
-  font-weight: 700;
+  padding: 12px 22px;
+  font-size: 14px;
   background: rgba(255, 255, 255, 0.05);
 }
 
