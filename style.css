@@ -156,6 +156,14 @@ nav a:hover {
   font-weight: 400;
   letter-spacing: -0.04em;
   color: var(--cream);
+  .hero h2 span {
+  display: block;
+}
+
+.hero h2 .last-name {
+  margin-left: 0.55em;
+  font-style: italic;
+
 }
 
 .hero-subtitle {
