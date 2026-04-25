@@ -174,3 +174,35 @@ nav a:hover {
   font-size: 16px;
   line-height: 1.7;
 }
+.hero-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 16px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn.primary {
+  background: var(--accent);
+  color: white;
+}
+
+.btn.primary:hover {
+  opacity: 0.85;
+}
+
+.btn.secondary {
+  border: 1px solid var(--border);
+  color: var(--cream);
+}
+
+.btn.secondary:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
