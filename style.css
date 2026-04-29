@@ -294,6 +294,12 @@ nav a:hover {
 .project-metrics div {
   padding: 22px 18px;
   border-right: 1px solid rgba(230, 216, 180, 0.16);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   text-align: center;
 }
 
@@ -307,7 +313,7 @@ nav a:hover {
   letter-spacing: 0.18em;
   color: var(--muted);
   text-transform: uppercase;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .project-metrics strong {
@@ -315,45 +321,4 @@ nav a:hover {
   font-size: 26px;
   font-weight: 400;
   color: var(--cream);
-}
-
-.project-link {
-  color: var(--accent);
-  font-size: 16px;
-}
-
-@media (max-width: 700px) {
-  .navbar {
-    padding: 0 20px;
-  }
-
-  nav {
-    display: none;
-  }
-
-  .hero {
-    padding: 80px 28px 150px;
-  }
-
-  .portfolio {
-    margin-top: -70px;
-    padding: 70px 28px 100px;
-  }
-
-  .project-card {
-    padding: 28px;
-  }
-
-  .project-metrics {
-    grid-template-columns: 1fr;
-  }
-
-  .project-metrics div {
-    border-right: none;
-    border-bottom: 1px solid rgba(230, 216, 180, 0.16);
-  }
-
-  .project-metrics div:last-child {
-    border-bottom: none;
-  }
 }
