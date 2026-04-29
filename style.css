@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap');
+
 :root {
   --bg: #090914;
   --bg-soft: #151020;
@@ -14,17 +15,24 @@
   box-sizing: border-box;
 }
 
+html {
+  min-height: 100%;
+  background: var(--bg);
+}
+
 body {
   margin: 0;
+  min-height: 100vh;
   font-family: 'Inter', sans-serif;
   color: var(--cream);
 
   background:
     linear-gradient(
       to bottom,
-      rgba(9, 9, 20, 0.35) 0%,
-      rgba(9, 9, 20, 0.7) 50%,
-      rgba(9, 9, 20, 0.95) 100%
+      rgba(9, 9, 20, 0.30) 0%,
+      rgba(9, 9, 20, 0.58) 48%,
+      rgba(9, 9, 20, 0.82) 72%,
+      rgba(9, 9, 20, 0.94) 100%
     ),
     url("assets/antelope-canyon.jpg");
 
@@ -58,7 +66,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Instrument Serif', serif;
   font-size: 20px;
   color: var(--cream);
   background: rgba(217, 79, 140, 0.10);
@@ -115,8 +123,8 @@ nav a:hover {
     linear-gradient(
       90deg,
       rgba(9, 9, 20, 0.92) 0%,
-      rgba(22, 12, 28, 0.76) 45%,
-      rgba(201, 95, 63, 0.20) 100%
+      rgba(22, 12, 28, 0.72) 45%,
+      rgba(201, 95, 63, 0.18) 100%
     );
 }
 
@@ -185,6 +193,7 @@ nav a:hover {
   font-size: 16px;
   line-height: 1.7;
 }
+
 .hero-buttons {
   margin-top: 30px;
   display: flex;
@@ -219,7 +228,14 @@ nav a:hover {
 }
 
 .portfolio {
-  padding: 80px 6vw;
+  padding: 80px 6vw 120px;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(9, 9, 20, 0.18) 0%,
+      rgba(9, 9, 20, 0.66) 45%,
+      rgba(9, 9, 20, 0.88) 100%
+    );
 }
 
 .project-card {
@@ -229,7 +245,8 @@ nav a:hover {
   padding: 40px;
   border: 1px solid rgba(230, 216, 180, 0.18);
   border-radius: 26px;
-  background: rgba(255, 255, 255, 0.025);
+  background: rgba(9, 9, 20, 0.42);
+  backdrop-filter: blur(10px);
   text-decoration: none;
   color: inherit;
   transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
@@ -238,7 +255,7 @@ nav a:hover {
 .project-card:hover {
   transform: translateY(-4px);
   border-color: rgba(230, 216, 180, 0.35);
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(9, 9, 20, 0.56);
 }
 
 .project-card-top {
