@@ -206,3 +206,122 @@ nav a:hover {
 .btn.secondary:hover {
   background: rgba(255, 255, 255, 0.08);
 }
+
+.portfolio {
+  padding: 80px 6vw;
+}
+
+.project-card {
+  display: block;
+  max-width: 900px;
+  margin-top: 40px;
+  padding: 40px;
+  border: 1px solid rgba(230, 216, 180, 0.18);
+  border-radius: 26px;
+  background: rgba(255, 255, 255, 0.025);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(230, 216, 180, 0.35);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.project-card-top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+.project-divider {
+  height: 1px;
+  background: rgba(230, 216, 180, 0.16);
+  margin: 24px 0;
+}
+
+.project-card h3 {
+  font-family: 'Instrument Serif', serif;
+  font-size: clamp(34px, 5vw, 54px);
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 18px;
+}
+
+.project-tools {
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 26px;
+}
+
+.project-summary {
+  max-width: 680px;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--muted);
+  margin-bottom: 34px;
+}
+
+.project-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid rgba(230, 216, 180, 0.16);
+  border-bottom: 1px solid rgba(230, 216, 180, 0.16);
+  margin-bottom: 28px;
+}
+
+.project-metrics div {
+  padding: 22px 18px 22px 0;
+  border-right: 1px solid rgba(230, 216, 180, 0.16);
+}
+
+.project-metrics div:last-child {
+  border-right: none;
+}
+
+.project-metrics span {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.project-metrics strong {
+  font-family: 'Instrument Serif', serif;
+  font-size: 26px;
+  font-weight: 400;
+  color: var(--cream);
+}
+
+.project-link {
+  color: var(--accent);
+  font-size: 16px;
+}
+
+@media (max-width: 700px) {
+  .project-card {
+    padding: 28px;
+  }
+
+  .project-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .project-metrics div {
+    border-right: none;
+    border-bottom: 1px solid rgba(230, 216, 180, 0.16);
+  }
+
+  .project-metrics div:last-child {
+    border-bottom: none;
+  }
+}
