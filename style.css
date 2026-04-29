@@ -376,33 +376,48 @@ nav a:hover {
   }
 }
 
-@media (max-width: 600px) {
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row; /* FIX: keep horizontal */
-    padding: 16px 20px;
+/* MOBILE NAV FIX */
+@media (max-width: 700px) {
+  header,
+  nav,
+  .navbar {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    flex-wrap: nowrap !important;
+    padding: 16px 20px !important;
   }
 
-  .nav-left {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+  .nav-links,
+  .nav-menu,
+  .menu {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 10px 16px !important;
+    width: auto !important;
   }
 
-  .nav-links {
-    display: flex;
-    flex-wrap: wrap; /* allows wrapping instead of stacking */
-    gap: 10px 14px;
-    font-size: 13px;
+  .nav-links a,
+  .nav-menu a,
+  .menu a {
+    display: inline-block !important;
+    font-size: 14px !important;
+    white-space: nowrap !important;
   }
 
-  .resume-btn {
-    padding: 8px 16px;
-    font-size: 13px;
-    white-space: nowrap;
+  .resume-btn,
+  .resume-button {
+    display: inline-block !important;
+    width: auto !important;
+    padding: 10px 18px !important;
+    font-size: 14px !important;
+    white-space: nowrap !important;
   }
+}
   
   .hero {
     padding: 75px 22px 60px;
