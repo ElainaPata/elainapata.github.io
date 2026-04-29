@@ -292,8 +292,9 @@ nav a:hover {
 }
 
 .project-metrics div {
-  padding: 22px 18px 22px 0;
+  padding: 22px 18px;
   border-right: 1px solid rgba(230, 216, 180, 0.16);
+  text-align: center;
 }
 
 .project-metrics div:last-child {
