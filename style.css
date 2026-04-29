@@ -110,16 +110,14 @@ nav a:hover {
 .hero {
   min-height: calc(100vh - 85px);
   padding: 110px 58px 80px;
+
   background:
     linear-gradient(
       90deg,
       rgba(9, 9, 20, 0.92) 0%,
       rgba(22, 12, 28, 0.76) 45%,
       rgba(201, 95, 63, 0.20) 100%
-    ),
-    url("assets/antelope-canyon.jpg");
-  background-size: cover;
-  background-position: center;
+    );
 }
 
 .section-label {
