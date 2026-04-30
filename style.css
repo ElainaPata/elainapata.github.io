@@ -619,3 +619,142 @@ nav a:hover {
     grid-template-columns: 1fr;
   }
 }
+/* =========================
+   EDUCATION & CREDENTIALS
+   ========================= */
+
+.section-heading {
+  font-family: 'Instrument Serif', serif;
+  font-size: clamp(44px, 7vw, 86px);
+  font-weight: 400;
+  line-height: 1;
+  margin: 0 0 70px;
+  color: var(--cream);
+}
+
+.credentials-layout {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.education-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.education-item {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 42px;
+  padding: 34px 0;
+  border-bottom: 1px solid rgba(230, 216, 180, 0.16);
+}
+
+.education-item:first-child {
+  padding-top: 0;
+}
+
+.edu-date {
+  color: var(--muted);
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.education-item h3,
+.cert-row h3 {
+  font-family: 'Instrument Serif', serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.1;
+  margin: 0 0 10px;
+  color: var(--cream);
+}
+
+.edu-school {
+  color: var(--accent);
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin: 0 0 16px;
+}
+
+.edu-desc {
+  color: var(--muted);
+  font-size: 15.5px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.cert-panel {
+  border: 1px solid rgba(230, 216, 180, 0.18);
+  border-radius: 26px;
+  padding: 34px;
+  background: rgba(9, 9, 20, 0.42);
+  backdrop-filter: blur(10px);
+}
+
+.cert-panel-label {
+  color: var(--accent);
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+}
+
+.cert-row {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 22px 0;
+  border-bottom: 1px solid rgba(230, 216, 180, 0.14);
+}
+
+.cert-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.cert-row:hover h3 {
+  color: var(--accent);
+}
+
+.cert-row p {
+  color: var(--muted);
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .credentials-layout {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+}
+
+@media (max-width: 700px) {
+  .section-heading {
+    font-size: clamp(40px, 13vw, 58px);
+    margin-bottom: 46px;
+  }
+
+  .education-item {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 30px 0;
+  }
+
+  .cert-panel {
+    padding: 26px;
+  }
+
+  .education-item h3,
+  .cert-row h3 {
+    font-size: 28px;
+  }
+}
