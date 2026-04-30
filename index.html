@@ -185,24 +185,25 @@
   </main>
 
   <script>
-    document.querySelectorAll(".nav-scroll").forEach(link => {
-      link.addEventListener("click", function(event) {
-        event.preventDefault();
+  document.querySelectorAll(".nav-scroll").forEach(link => {
+    link.addEventListener("click", function(event) {
+      event.preventDefault();
 
-        const targetId = this.getAttribute("data-target");
-        const targetSection = document.getElementById(targetId);
+      const targetId = this.getAttribute("data-target");
+      const targetSection = document.getElementById(targetId);
 
-        if (targetSection) {
-          targetSection.scrollIntoView({
-            behavior: "smooth",
-            block: "start"
-          });
+      if (targetSection) {
+        const navbarOffset = 120;
+        const sectionTop = targetSection.getBoundingClientRect().top + window.pageYOffset;
+        const scrollTarget = sectionTop - navbarOffset;
 
-          history.pushState(null, "", "#" + targetId);
-        }
-      });
+        window.scrollTo({
+          top: scrollTarget,
+          behavior: "smooth"
+        });
+
+        history.pushState(null, "", "#" + targetId);
+      }
     });
-  </script>
-
-</body>
-</html>
+  });
+</script>
