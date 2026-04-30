@@ -133,7 +133,7 @@ nav a:hover {
 
 .hero {
   min-height: calc(100vh - 85px);
-  padding: 110px 58px 80px;
+  padding: 110px 6vw 80px;
   background: transparent;
 }
 
