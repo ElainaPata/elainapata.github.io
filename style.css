@@ -745,3 +745,41 @@ nav a:hover {
     padding: 22px;
   }
 }
+/* =========================
+   PROJECT LINKS
+   ========================= */
+
+.project-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 26px;
+  flex-wrap: wrap;
+}
+
+.project-links a {
+  display: inline-block;
+  color: var(--cream);
+  text-decoration: none;
+  border: 1px solid rgba(217, 79, 140, 0.35);
+  border-radius: 999px;
+  padding: 11px 18px;
+  font-size: 14px;
+  font-weight: 700;
+  background: rgba(217, 79, 140, 0.10);
+}
+
+.project-links a:hover {
+  background: rgba(217, 79, 140, 0.18);
+  color: var(--cream);
+}
+
+@media (max-width: 700px) {
+  .project-links {
+    flex-direction: column;
+  }
+
+  .project-links a {
+    width: 100%;
+    text-align: center;
+  }
+}
