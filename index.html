@@ -17,8 +17,8 @@
     </div>
 
     <nav>
-      <a href="#projects">Projects</a>
-      <a href="#education">Education & Certifications</a>
+      <a href="#projects" class="nav-scroll" data-target="projects">Projects</a>
+      <a href="#education" class="nav-scroll" data-target="education">Education & Certifications</a>
     </nav>
 
     <a class="resume-btn" href="resume.pdf" target="_blank">Resume</a>
@@ -59,7 +59,7 @@
 
 
     <!-- ================= PROJECTS ================= -->
-    <section id="projects" class="portfolio">
+    <section id="projects" class="projects">
       <div class="section-label">
         <div class="line"></div>
         <p>Projects</p>
@@ -178,6 +178,26 @@
     </section>
 
   </main>
+
+  <script>
+    document.querySelectorAll(".nav-scroll").forEach(link => {
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+
+        const targetId = this.getAttribute("data-target");
+        const targetSection = document.getElementById(targetId);
+
+        if (targetSection) {
+          targetSection.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+
+          history.pushState(null, "", "#" + targetId);
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>
