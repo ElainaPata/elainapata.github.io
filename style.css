@@ -623,138 +623,147 @@ nav a:hover {
    EDUCATION & CREDENTIALS
    ========================= */
 
-.section-heading {
+.education-credentials-layout {
+  display: grid;
+  grid-template-columns: 1.35fr 0.9fr;
+  gap: 42px;
+  align-items: start;
+  margin-top: 40px;
+}
+
+.education-heading {
   font-family: 'Instrument Serif', serif;
-  font-size: clamp(44px, 7vw, 86px);
+  font-size: clamp(38px, 5vw, 58px);
   font-weight: 400;
   line-height: 1;
-  margin: 0 0 70px;
+  margin: 0 0 34px;
   color: var(--cream);
 }
 
-.credentials-layout {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  gap: 60px;
-  align-items: start;
+.education-column,
+.certification-column {
+  min-width: 0;
 }
 
-.education-list {
-  display: flex;
-  flex-direction: column;
-}
-
-.education-item {
+.education-entry {
   display: grid;
-  grid-template-columns: 110px 1fr;
-  gap: 42px;
-  padding: 34px 0;
+  grid-template-columns: 90px 1fr;
+  gap: 28px;
+  padding: 30px 0;
   border-bottom: 1px solid rgba(230, 216, 180, 0.16);
 }
 
-.education-item:first-child {
+.education-entry:first-of-type {
   padding-top: 0;
 }
 
-.edu-date {
+.education-date {
   color: var(--muted);
-  font-size: 13px;
-  letter-spacing: 0.12em;
+  font-size: 12px;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
+  padding-top: 8px;
 }
 
-.education-item h3,
-.cert-row h3 {
+.education-content h3 {
   font-family: 'Instrument Serif', serif;
-  font-size: 30px;
+  font-size: clamp(30px, 4vw, 42px);
   font-weight: 400;
-  line-height: 1.1;
-  margin: 0 0 10px;
+  line-height: 1.05;
+  margin: 0 0 12px;
   color: var(--cream);
 }
 
-.edu-school {
+.education-school {
   color: var(--accent);
-  font-size: 13px;
-  letter-spacing: 0.12em;
+  font-size: 12px;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   margin: 0 0 16px;
 }
 
-.edu-desc {
+.education-description {
   color: var(--muted);
   font-size: 15.5px;
   line-height: 1.7;
   margin: 0;
 }
 
-.cert-panel {
+.certification-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.cert-bubble {
+  display: block;
+  padding: 26px;
+  margin-bottom: 18px;
+  border-radius: 24px;
   border: 1px solid rgba(230, 216, 180, 0.18);
-  border-radius: 26px;
-  padding: 34px;
   background: rgba(9, 9, 20, 0.42);
   backdrop-filter: blur(10px);
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
 }
 
-.cert-panel-label {
+.cert-bubble:hover {
+  transform: translateY(-4px);
+  border-color: rgba(230, 216, 180, 0.35);
+  background: rgba(9, 9, 20, 0.56);
+}
+
+.cert-bubble span {
+  display: block;
   color: var(--accent);
-  font-size: 12px;
+  font-size: 11px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  margin: 0 0 20px;
+  margin-bottom: 18px;
 }
 
-.cert-row {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-  padding: 22px 0;
-  border-bottom: 1px solid rgba(230, 216, 180, 0.14);
+.cert-bubble h3 {
+  font-family: 'Instrument Serif', serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.05;
+  margin: 0 0 12px;
+  color: var(--cream);
 }
 
-.cert-row:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
-.cert-row:hover h3 {
-  color: var(--accent);
-}
-
-.cert-row p {
+.cert-bubble p {
   color: var(--muted);
-  font-size: 14px;
-  letter-spacing: 0.08em;
+  font-size: 13px;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   margin: 0;
 }
 
-/* MOBILE */
+/* Tablet */
 @media (max-width: 900px) {
-  .credentials-layout {
+  .education-credentials-layout {
     grid-template-columns: 1fr;
-    gap: 42px;
+    gap: 54px;
   }
 }
 
+/* Mobile */
 @media (max-width: 700px) {
-  .section-heading {
-    font-size: clamp(40px, 13vw, 58px);
-    margin-bottom: 46px;
+  .education-credentials-layout {
+    margin-top: 32px;
   }
 
-  .education-item {
+  .education-entry {
     grid-template-columns: 1fr;
-    gap: 12px;
-    padding: 30px 0;
+    gap: 10px;
+    padding: 28px 0;
   }
 
-  .cert-panel {
-    padding: 26px;
+  .education-date {
+    padding-top: 0;
   }
 
-  .education-item h3,
-  .cert-row h3 {
-    font-size: 28px;
+  .cert-bubble {
+    padding: 24px;
   }
 }
