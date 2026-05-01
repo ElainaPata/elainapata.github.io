@@ -237,13 +237,18 @@ nav a:hover {
 }
 
 /* =========================
-   PORTFOLIO / PROJECT CARD
+   MAIN SECTIONS
    ========================= */
 
-.portfolio {
+.portfolio,
+.projects {
   padding: 80px 6vw 120px;
   background: transparent;
 }
+
+/* =========================
+   PROJECT CARD
+   ========================= */
 
 .project-card {
   display: block;
@@ -340,6 +345,34 @@ nav a:hover {
   font-family: 'Instrument Serif', serif;
   font-size: 26px;
   font-weight: 400;
+  color: var(--cream);
+}
+
+/* =========================
+   PROJECT LINKS
+   ========================= */
+
+.project-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 26px;
+  flex-wrap: wrap;
+}
+
+.project-links a {
+  display: inline-block;
+  color: var(--cream);
+  text-decoration: none;
+  border: 1px solid rgba(217, 79, 140, 0.35);
+  border-radius: 999px;
+  padding: 11px 18px;
+  font-size: 14px;
+  font-weight: 700;
+  background: rgba(217, 79, 140, 0.10);
+}
+
+.project-links a:hover {
+  background: rgba(217, 79, 140, 0.18);
   color: var(--cream);
 }
 
@@ -508,7 +541,8 @@ nav a:hover {
     flex-wrap: wrap;
   }
 
-  .portfolio {
+  .portfolio,
+  .projects {
     padding: 70px 28px 100px;
   }
 
@@ -628,7 +662,8 @@ nav a:hover {
     text-align: center;
   }
 
-  .portfolio {
+  .portfolio,
+  .projects {
     padding: 60px 22px 90px;
   }
 
@@ -669,6 +704,15 @@ nav a:hover {
 
   .project-metrics div:last-child {
     border-bottom: none;
+  }
+
+  .project-links {
+    flex-direction: column;
+  }
+
+  .project-links a {
+    width: 100%;
+    text-align: center;
   }
 
   .education-credentials-layout {
@@ -733,7 +777,8 @@ nav a:hover {
     padding: 62px 18px 54px;
   }
 
-  .portfolio {
+  .portfolio,
+  .projects {
     padding: 54px 18px 80px;
   }
 
@@ -743,43 +788,5 @@ nav a:hover {
 
   .project-card {
     padding: 22px;
-  }
-}
-/* =========================
-   PROJECT LINKS
-   ========================= */
-
-.project-links {
-  display: flex;
-  gap: 16px;
-  margin-top: 26px;
-  flex-wrap: wrap;
-}
-
-.project-links a {
-  display: inline-block;
-  color: var(--cream);
-  text-decoration: none;
-  border: 1px solid rgba(217, 79, 140, 0.35);
-  border-radius: 999px;
-  padding: 11px 18px;
-  font-size: 14px;
-  font-weight: 700;
-  background: rgba(217, 79, 140, 0.10);
-}
-
-.project-links a:hover {
-  background: rgba(217, 79, 140, 0.18);
-  color: var(--cream);
-}
-
-@media (max-width: 700px) {
-  .project-links {
-    flex-direction: column;
-  }
-
-  .project-links a {
-    width: 100%;
-    text-align: center;
   }
 }
