@@ -184,21 +184,24 @@
 
   </main>
 
-  <script>
+<script>
+  const NAV_HEIGHT = 110;
+
   document.querySelectorAll(".nav-scroll").forEach(link => {
-    link.addEventListener("click", function(event) {
-      event.preventDefault();
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
 
       const targetId = this.getAttribute("data-target");
-      const targetSection = document.getElementById(targetId);
+      const target = document.getElementById(targetId);
 
-      if (targetSection) {
-        const navbarOffset = 120;
-        const sectionTop = targetSection.getBoundingClientRect().top + window.pageYOffset;
-        const scrollTarget = sectionTop - navbarOffset;
+      if (target) {
+        const y =
+          target.getBoundingClientRect().top +
+          window.pageYOffset -
+          NAV_HEIGHT;
 
         window.scrollTo({
-          top: scrollTarget,
+          top: y,
           behavior: "smooth"
         });
 
