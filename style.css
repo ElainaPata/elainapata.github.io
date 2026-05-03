@@ -38,12 +38,27 @@ body {
     ),
     url("assets/antelope-canyon.jpg");
 
-  background-size: cover;
+  background-size: 110%;
   background-position: center top;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+@media (min-width: 901px) {
+  body {
+    animation: canyonDepth 18s ease-in-out infinite alternate;
+  }
 
+  @keyframes canyonDepth {
+    from {
+      background-size: 108%;
+      background-position: center top;
+    }
+    to {
+      background-size: 114%;
+      background-position: center center;
+    }
+  }
+}
 section {
   scroll-margin-top: 110px;
 }
