@@ -58,59 +58,101 @@
     </section>
 
 
-    <!-- ================= PROJECTS ================= -->
-    <section id="projects" class="projects">
-      <div class="section-label">
-        <div class="line"></div>
-        <p>Projects</p>
+   <!-- ================= PROJECTS ================= -->
+<section id="projects" class="projects">
+  <div class="section-label">
+    <div class="line"></div>
+    <p>Projects</p>
+  </div>
+
+  <div class="project-card">
+    <div class="project-card-top">
+      <span>F/01</span>
+      <span>Data Warehouse Case Study</span>
+    </div>
+
+    <div class="project-divider"></div>
+
+    <h3>U.S. Aviation Performance Data Warehouse</h3>
+
+    <p class="project-tools">
+      SQL Server · T-SQL · Docker · Azure Data Studio · Excel · Dimensional Modeling
+    </p>
+
+    <p class="project-summary">
+      Built an end-to-end SQL Server data warehouse using a medallion architecture
+      to analyze 600K+ January 2019 U.S. flight records. The project combined
+      Bureau of Transportation Statistics flight data with airport and weather data
+      to evaluate airline performance, route reliability, cancellation behavior,
+      airport delay patterns, and operational risk.
+    </p>
+
+    <div class="project-metrics">
+      <div>
+        <span>Dataset Size</span>
+        <strong>600K+ Records</strong>
       </div>
-
-      <div class="project-card">
-        <div class="project-card-top">
-          <span>F/01</span>
-          <span>Data Warehouse</span>
-        </div>
-
-        <div class="project-divider"></div>
-
-        <h3>U.S. Aviation Performance Data Warehouse</h3>
-
-        <p class="project-tools">
-          SQL Server · T-SQL · Docker · Azure Data Studio · Excel
-        </p>
-
-        <p class="project-summary">
-          End-to-end data warehouse project analyzing January 2019 U.S. flight performance.
-          Data was sourced from the Bureau of Transportation Statistics and combined with
-          weather datasets to evaluate airline performance, route reliability, airport delays,
-          cancellations, and operational trends using a medallion architecture.
-        </p>
-
-        <div class="project-metrics">
-          <div>
-            <span>Performance Gap</span>
-            <strong>Regional vs Major Airlines</strong>
-          </div>
-          <div>
-            <span>Operational Risk</span>
-            <strong>Low-Frequency Routes</strong>
-          </div>
-          <div>
-            <span>Primary Driver</span>
-            <strong>Operational Constraints</strong>
-          </div>
-        </div>
-
-        <div class="project-links">
-          <a href="https://github.com/ElainaPata/U.S.-Aviation-Performance-Data-Warehouse-Project/tree/main" target="_blank">
-            Repository →
-          </a>
-          <a href="https://github.com/ElainaPata/U.S.-Aviation-Performance-Data-Warehouse-Project/tree/main/Analysis" target="_blank">
-            View Analysis →
-          </a>
-        </div>
+      <div>
+        <span>Architecture</span>
+        <strong>Bronze → Silver → Gold</strong>
       </div>
-    </section>
+      <div>
+        <span>Model Design</span>
+        <strong>Star Schema</strong>
+      </div>
+    </div>
+
+    <div class="project-divider"></div>
+
+    <p class="project-summary">
+      <strong style="color: var(--cream);">Business Question:</strong>
+      How can structured flight, airport, route, airline, and weather data be used
+      to identify patterns in airline delays, cancellations, route risk, and airport
+      congestion?
+    </p>
+
+    <p class="project-summary">
+      <strong style="color: var(--cream);">What I Built:</strong>
+      I created a layered data warehouse workflow that loaded raw source files into
+      a Bronze layer, cleaned and standardized records in the Silver layer, and built
+      analytics-ready fact and dimension tables in the Gold layer. The final model
+      supported SQL analysis across airlines, airports, routes, dates, and weather
+      conditions.
+    </p>
+
+    <p class="project-summary">
+      <strong style="color: var(--cream);">Key Insights:</strong>
+      The analysis identified performance gaps between regional and major airlines,
+      highlighted routes with higher operational risk, surfaced airports with elevated
+      departure delay patterns, and showed that operational constraints appeared to
+      be a stronger delay driver than weather alone.
+    </p>
+
+    <div class="project-metrics">
+      <div>
+        <span>Insight Area</span>
+        <strong>Airline Performance</strong>
+      </div>
+      <div>
+        <span>Insight Area</span>
+        <strong>Route Reliability</strong>
+      </div>
+      <div>
+        <span>Insight Area</span>
+        <strong>Weather Impact</strong>
+      </div>
+    </div>
+
+    <div class="project-links">
+      <a href="https://github.com/ElainaPata/U.S.-Aviation-Performance-Data-Warehouse-Project/tree/main" target="_blank">
+        Repository →
+      </a>
+      <a href="https://github.com/ElainaPata/U.S.-Aviation-Performance-Data-Warehouse-Project/tree/main/Analysis" target="_blank">
+        View Analysis →
+      </a>
+    </div>
+  </div>
+</section>
 
 
     <!-- ================= EDUCATION & CERTIFICATIONS ================= -->
