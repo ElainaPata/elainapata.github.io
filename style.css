@@ -230,22 +230,61 @@ nav a:hover {
   transition: all 0.2s ease;
 }
 
+/* =========================
+   BUTTONS (GLASS UPGRADE)
+   ========================= */
+
+.btn {
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+
+  /* GLASS BASE */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  transition: all 0.25s ease;
+}
+
+/* PRIMARY (GitHub) */
 .btn.primary {
-  background: var(--accent);
+  background: linear-gradient(
+    135deg,
+    rgba(217, 79, 140, 0.85),
+    rgba(217, 79, 140, 0.65)
+  );
   color: white;
+
+  box-shadow:
+    0 8px 20px rgba(217, 79, 140, 0.25);
 }
 
 .btn.primary:hover {
-  opacity: 0.85;
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 12px 28px rgba(217, 79, 140, 0.4),
+    0 0 12px rgba(217, 79, 140, 0.25);
 }
 
+/* SECONDARY (LinkedIn / Contact) */
 .btn.secondary {
-  border: 1px solid var(--border);
+  background: rgba(20, 20, 30, 0.55);
   color: var(--cream);
 }
 
 .btn.secondary:hover {
-  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-2px);
+
+  background: rgba(30, 30, 45, 0.65);
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.4),
+    0 0 10px rgba(217, 79, 140, 0.15);
 }
 
 /* =========================
