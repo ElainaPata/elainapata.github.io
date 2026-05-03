@@ -423,15 +423,16 @@ nav a:hover {
 .project-metrics span {
   display: block;
   font-size: 11px;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.20em; /* slightly increased */
   color: var(--muted);
   text-transform: uppercase;
   margin-bottom: 10px;
+  opacity: 0.7; /* 👈 adds hierarchy */
 }
 
 .project-metrics strong {
   font-family: 'Instrument Serif', serif;
-  font-size: 26px;
+  font-size: 28px; /* slightly larger */
   font-weight: 400;
   color: var(--cream);
 }
