@@ -43,22 +43,20 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-@media (min-width: 901px) {
-  body {
-    animation: canyonDepth 18s ease-in-out infinite alternate;
-  }
-
-  @keyframes canyonDepth {
-    from {
-      background-size: 108%;
-      background-position: center top;
-    }
-    to {
-      background-size: 114%;
-      background-position: center center;
-    }
-  }
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(
+      circle at 70% 35%,
+      rgba(217, 79, 140, 0.12),
+      transparent 35%
+    );
+  z-index: -1;
 }
+
 section {
   scroll-margin-top: 110px;
 }
